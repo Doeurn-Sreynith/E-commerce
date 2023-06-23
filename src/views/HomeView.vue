@@ -1,7 +1,8 @@
 <template>
+    <HeaderNav/>
     <div class="all">
         
-        <div class="sub-header mx-auto flex flex-col items-center justify-center h-[50%]  ">
+        <div class="sub-header mx-auto flex flex-col items-center justify-center h-[50%] bg-[#eafdfc]">
             <div class="hero-tittle bg-[#06283d] mt-10 flex items-center justify-center rounded-lg w-[80%] p-8">
                 <div class="left-subHeader">
                     <h1 class="text-white font-bold text-3xl pb-7 pr-5">Shopping Favorite Anime</h1>
@@ -130,4 +131,9 @@
             </div>
         </div>
     </div>
+    <Footers/>
 </template>
+<script setup>
+import HeaderNav from '../components/HeaderNav.vue'
+import Footers from '../components/Footers.vue'
+</script>

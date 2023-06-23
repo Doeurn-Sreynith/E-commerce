@@ -6,9 +6,9 @@
           <h1 class="text-white font-bold mx-3">ANIME SHOP</h1>
         </div>
         <div class="categories flex items-center w-full mr-8">
-          <h1 class="text-[#46e551] font-bold px-3 ">HOME</h1>
-          <h1 class="text-[#46e551] font-bold px-3 border-x-2">ABOUT</h1>
-          <h1 class="text-[#46e551] font-bold px-3 ">MENU</h1>
+          <h1 class="text-[#46e551] font-bold px-3 "><RouterLink to="/">HOME</RouterLink></h1>
+          <h1 class="text-[#46e551] font-bold px-3 border-x-2"><router-link to="/about">ABOUT</router-link></h1>
+          <h1 class="text-[#46e551] font-bold px-3 ">CONTACT</h1>
         </div>
       </div>
       <div class="right-header flex items-center">
