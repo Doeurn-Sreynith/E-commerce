@@ -1,5 +1,5 @@
 <template>
-    <HeaderNav/>
+<defaultLayout>
     <div class="all">
         
         <div class="sub-header mx-auto flex flex-col items-center justify-center h-[50%] bg-[#eafdfc]">
@@ -44,7 +44,7 @@
             </div>
             <div class="Products flex my-12 justify-center flex-wrap gap-10 w-[80%] ">
                 <div class="product1 bg-[#06283d] p-4 w-[30%] rounded-md">
-                    <img src="../assets/pic11-removebg-preview.png" class="w-full" alt="product">
+                    <RouterLink to="/ViewProduct"><img src="../assets/pic11-removebg-preview.png" class="w-full" alt="product"></RouterLink>
                     <div class="btn w-full flex justify-between items-center px-[1rem]"> 
                         <div class="price font-bold text-xl text-[#ff8b13]">
                             $29.7
@@ -58,7 +58,7 @@
                     </div>
                 </div>
                 <div class="product2 bg-[#06283d] p-4 w-[30%] rounded-md">
-                    <img src="../assets/14pic-removebg-preview.png" class="w-full" alt="product">
+                    <RouterLink to="/ViewProduct"><img src="../assets/14pic-removebg-preview.png" class="w-full" alt="product"></RouterLink>
                     <div class="btn w-full flex justify-between items-center px-[1rem]"> 
                         <div class="price font-bold text-xl text-[#ff8b13]">
                             $25
@@ -72,7 +72,7 @@
                     </div>
                 </div>
                 <div class="product3 bg-[#06283d] p-4 w-[30%] rounded-md">
-                    <img src="../assets/pic13-removebg-preview.png" class="w-full" alt="product">
+                    <RouterLink to="/ViewProduct"><img src="../assets/pic13-removebg-preview.png" class="w-full" alt="product"></RouterLink>
                     <div class="btn w-full flex justify-between items-center px-[1rem]"> 
                         <div class="price font-bold text-xl text-[#ff8b13]">
                             $32.5
@@ -86,7 +86,7 @@
                     </div>
                 </div>
                 <div class="product4 bg-[#06283d] p-4 w-[30%] rounded-md">
-                    <img src="../assets/demon-slayer-removebg-preview.png" class="w-full" alt="product">
+                    <RouterLink to="/ViewProduct"><img src="../assets/demon-slayer-removebg-preview.png" class="w-full" alt="product"></RouterLink>
                     <div class="btn w-full flex justify-between items-center px-[1rem]"> 
                         <div class="price font-bold text-xl text-[#ff8b13]">
                             $28
@@ -100,7 +100,7 @@
                     </div>
                 </div>
                 <div class="product5 bg-[#06283d] p-4 w-[30%] rounded-md">
-                    <img src="../assets/pic9-removebg-preview (1).png" class="w-full" alt="product">
+                    <RouterLink to="/ViewProduct"><img src="../assets/pic9.png" class="w-full" alt="product"></RouterLink>
                     <div class="btn w-full flex justify-between items-center px-[1rem]"> 
                         <div class="price font-bold text-xl text-[#ff8b13]">
                             $46
@@ -114,7 +114,7 @@
                     </div>
                 </div>
                 <div class="product5 bg-[#06283d] p-4 w-[30%] rounded-md">
-                    <img src="../assets/pic8-removebg-preview.png" class="w-full" alt="product">
+                    <RouterLink to="/ViewProduct"><img src="../assets/pic8-removebg-preview.png" class="w-full" alt="product"></RouterLink>
                     <div class="btn w-full flex justify-between items-center px-[1rem]"> 
                         <div class="price font-bold text-xl text-[#ff8b13]">
                             29$
@@ -131,9 +131,9 @@
             </div>
         </div>
     </div>
-    <Footers/>
+</defaultLayout>
+
 </template>
 <script setup>
-import HeaderNav from '../components/HeaderNav.vue'
-import Footers from '../components/Footers.vue'
+import defaultLayout from '../layout/default.layout.vue';
 </script>

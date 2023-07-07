@@ -1,5 +1,5 @@
 <template>
-    <HeaderNav />
+  <defaultLayout>
     <div class="all">
         <div class="sub-header mx-auto flex flex-col items-center justify-center h-[50%] bg-[#eafdfc]">
             <div class="landing-page bg-[#06283d] mt-10 flex items-center justify-center rounded-lg w-[80%]">
@@ -62,7 +62,7 @@
                 </div>
             </div>
             <div class="Calling-action bg-[#06283d] mt-20 items-center justify-center rounded-lg w-[80%] mb-8">
-                <h1 class="text-white text-center font-bold text-3xl pt-8">Heading for Call To Action Botton</h1>
+                <h1 class="text-[#aae3e2] text-center font-bold text-3xl pt-8">Heading for Call To Action Botton</h1>
                 <div class="flex justify-center p-8">
                     <div class="button-contact flex items-center gap-8 ">
                         <button class="bg-[#fcfe8b] p-2 rounded-md flex justify-between items-center">
@@ -80,8 +80,12 @@
         </div>
 
     </div>
-    <Footers /></template>
+  </defaultLayout>
+  
+</template>
 <script setup>
-import HeaderNav from '../components/HeaderNav.vue'
-import Footers from '../components/Footers.vue'
+import defaultLayout from '../layout/default.layout.vue';
+
 </script>
+
+            

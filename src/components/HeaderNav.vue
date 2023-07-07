@@ -8,7 +8,8 @@
         <div class="categories flex items-center w-full mr-8">
           <h1 class="text-[#46e551] font-bold px-3 "><RouterLink to="/">HOME</RouterLink></h1>
           <h1 class="text-[#46e551] font-bold px-3 border-x-2"><router-link to="/about">ABOUT</router-link></h1>
-          <h1 class="text-[#46e551] font-bold px-3 ">CONTACT</h1>
+          <h1 class="text-[#46e551] font-bold px-3 "><RouterLink to="/contact">CONTACT</RouterLink></h1>
+          <h1 class="text-[#46e551] font-bold px-3 "><RouterLink to="/login">LOGIN</RouterLink></h1>
         </div>
       </div>
       <div class="right-header flex items-center">
@@ -19,4 +20,6 @@
     </div>
 </template>
 <script setup>
+import { RouterLink } from 'vue-router';
+
 </script>
