@@ -31,6 +31,7 @@ const router = createRouter({
       path: '/login',
       name: 'login',
       component: () => import('../views/LoginView.vue')
+     
     },
 
     {
@@ -39,6 +40,48 @@ const router = createRouter({
       component: () => import('../views/SignupView.vue')
     },
 
+    {
+      path: '/checkout',
+      name: 'checkout',
+      component: () => import('../views/CheckoutView.vue')
+    },
+
+    {
+      path: '/homepage',
+      name: 'homepage',
+      component: () => import('../views/HomepageUser.vue')
+    },
+
+    {
+      path: '/order',
+      name: 'order',
+      component: () => import('../views/OrderView.vue')
+    },
+
+    {
+      path: '/shippingAddr',
+      name: 'shippingAddr',
+      component: () => import('../views/ShippingAddrView.vue')
+    },
+
+    {
+      path: '/shippingMethod',
+      name: 'shippingMethod',
+      component: () => import('../views/shippingMethodView.vue')
+    },
+
+    {
+      path: '/payment',
+      name: 'payment',
+      component: () => import('../views/PaymentView.vue')
+    },
+
+    {
+      path: '/SummaryOrder',
+      name: 'SummaryOrder',
+      component: () => import('../views/SummaryOrder.vue')
+    },
+    
   ]
 })
 

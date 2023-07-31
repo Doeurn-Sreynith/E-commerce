@@ -83,6 +83,49 @@
     </defaultLayout>
 </template>
 
-    <script setup>
+    <script >
         import defaultLayout from '../layout/default.layout.vue';
+        
+
+        export default {
+  data() {
+    return {
+      username: "",
+      email: "",
+      pwd: "",
+      firstName: "",
+      lastName: "",
+      repeatPws: "",
+    };
+  },
+  methods: {
+    async onSubmit(e) {
+      e.preventDefault();
+      const res = await fetch('http://127.0.0.1:8000/api/auth/register', {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+          Origin: "http://localhost:8000",
+        },
+        body: JSON.stringify({
+          username: this.username,
+          email: this.email,
+          firstName: this.firstName,
+          lastName: this.lastName,
+          password: this.pwd,
+          repeat_password: this.repeatPws,
+        }),
+      });
+
+      const result = await res.json();
+      if (!result.success) {
+        alert(result.error);
+        return;
+      }
+
+      alert("Successfully registered~");
+      this.$router.push({ name: "login" });
+    },
+  },
+};
     </script>

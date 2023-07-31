@@ -27,6 +27,7 @@
                         <input type="text"  placeholder="Message">
                     </div>
                     <input type="submit"  value="Send">
+                    
                 </form>
                 <div class="socail">
                     <a href="#">
@@ -63,8 +64,6 @@
             </main>
             
         </div>
-        
-        
         
         
     </defaultLayout>
