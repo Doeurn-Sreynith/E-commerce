@@ -136,4 +136,5 @@
     </template>
     <script setup>
     import defultUserLayout from '../layout/defultUser.layout.vue';
+   
     </script>
